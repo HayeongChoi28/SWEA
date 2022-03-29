@@ -1,0 +1,53 @@
+T = int(input())
+for t in range(1, T+1):
+    N = int(input())
+    if(N//50000!=0):
+        a=N//50000
+        N=N%50000
+    else:
+        a=N//50000
+        N=N
+    if(N//10000!=0):
+        b=N//10000
+        N=N%10000
+    else:
+        b=N//10000
+        N=N
+    if(N//5000!=0):
+        c=N//5000
+        N=N%5000
+    else:
+        c=N//5000
+        N=N
+    if(N//1000!=0):
+        d=N//1000
+        N=N%1000
+    else:
+        d=N//1000
+        N=N
+    if(N//500!=0):
+        e=N//500
+        N=N%500
+    else:
+        e=N//500
+        N=N
+    if(N//100!=0):
+        f=N//100
+        N=N%100
+    else:
+        f=N//100
+        N=N
+    if(N//50!=0):
+        g=N//50
+        N=N%50
+    else:
+        g=N//50
+        N=N
+    if(N//10!=0):
+        h=N//10
+        N=N%10
+    else:
+        h=N//10
+        N=N
+    print('#{}'.format(t))
+    print(a, b, c, d, e, f, g, h)
